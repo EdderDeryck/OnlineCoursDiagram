@@ -1,6 +1,6 @@
 # Sistema de Cursos Online
 
-Este projeto foi desenvolvido como atividade prática da disciplina de Engenharia de Software, com foco em Programação Orientada a Objetos (POO) e análise de requisitos por meio de diagramas UML.
+Este projeto foi desenvolvido como atividade prática da disciplina de Engenharia de Software, com foco em análise de requisitos por meio de diagramas UML.
 
 ## Descrição
 
