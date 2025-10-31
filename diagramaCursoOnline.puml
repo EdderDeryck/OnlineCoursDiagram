@@ -1,0 +1,60 @@
+@startuml
+left to right direction
+
+' --- Atores ---
+actor "Aluno" as Aluno         
+actor "Professor" as Professor 
+actor "Administrador" as Admin  
+actor "Sistema de Pagamentos" as Pagamento  
+
+' --- Sistema ---
+rectangle "Sistema de Cursos Online" {
+    usecase "Realizar Login" as UC1           
+    usecase "Inscrever-se em Curso" as UC2    
+    usecase "Efetuar Pagamento" as UC3        
+    usecase "Emitir Certificado" as UC4       
+    usecase "Visualizar Certificados" as UC10 
+    usecase "Gerar Relatório" as UC6          
+    usecase "Validar Cartão" as UC7           
+    usecase "Verificar Conclusão do Curso" as UC8 
+    usecase "Visualizar Desempenho dos Alunos" as UC9 
+    usecase "Acessar Conteúdo de Aula" as UC11 
+}
+
+' --- Relações de Atores ---
+Aluno --> UC1
+Aluno --> UC2
+Aluno --> UC10   
+Aluno --> UC3
+
+Professor --> UC11
+Professor --> UC9
+
+Admin --> UC4
+Admin --> UC6
+Admin --> UC11 
+
+Pagamento --> UC3
+
+' --- Relações include e extend ---
+UC3 --> UC7 : <<include>>          Efetuar Pagamento inclui Validar Cartão
+UC4 --> UC8 : <<include>>          Emitir Certificado inclui Verificar Conclusão
+UC6 --> UC9 : <<extend>>           Gerar Relatório estende Visualizar Desempenho
+
+' --- Relações adicionais ---
+UC2 --> UC3 : <<include>>          Inscrição inclui pagamento
+UC2 --> UC1 : <<include>>          Inscrever-se inclui login
+
+@enduml
+
+
+'O sistema de cursos online possui quatro atores principais. 
+'O Aluno realiza login, se inscreve em cursos, efetua pagamentos e visualiza certificados. 
+'O Professor acessa o conteúdo de aula e acompanha o desempenho dos alunos. 
+'O Administrador é responsável por emitir certificados, gerar relatórios e gerenciar o conteúdo das aulas. 
+'O Sistema de Pagamentos realiza o processamento do pagamento, incluindo a validação do cartão.
+'Os relacionamentos include indicam que uma ação depende obrigatoriamente de outra: 
+'por exemplo, efetuar pagamento inclui validar cartão e emitir certificado inclui verificar a conclusão do curso.
+'Já o relacionamento extend mostra uma funcionalidade opcional ou condicional, 
+'como gerar relatório estendendo a visualização do desempenho dos alunos. 
+'Além disso, inscrever-se em um curso inclui obrigatoriamente login e pagamento.
