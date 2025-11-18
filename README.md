@@ -17,7 +17,7 @@ O modelo apresenta relacionamentos de inclusão (include) para indicar dependên
 
 O diagrama de casos de uso foi criado com PlantUML e está disponível no arquivo `sistema_cursos_online.puml`.
 
-![Diagrama de Casos de Uso](<img width="894" height="575" alt="image" src="https://github.com/user-attachments/assets/e4eba65c-08fa-4d12-80f1-d578e7efa74c" />
+(<img width="894" height="575" alt="image" src="https://github.com/user-attachments/assets/e4eba65c-08fa-4d12-80f1-d578e7efa74c" />
 
 
 ## Tecnologias Utilizadas
@@ -36,7 +36,7 @@ O diagrama de casos de uso foi criado com PlantUML e está disponível no arquiv
 ## Link para visualização do diagrama online
 
 Você pode visualizar o diagrama PlantUML online em:  
-[https://www.db-fiddle.com/f/ejPtkA85edVn8gdDdewoRU/51](https://www.db-fiddle.com/f/ejPtkA85edVn8gdDdewoRU/51)
+(https://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa700001)
 
 ## Instruções para execução
 
