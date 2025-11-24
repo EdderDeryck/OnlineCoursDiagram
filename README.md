@@ -27,7 +27,7 @@ O diagrama de casos de uso foi criado com PlantUML e está disponível no arquiv
 
 ## Colaboradores
 
-- Edder Deryck
+- Edder
 - Gustavo
 - Sylmar
 - Danilo
